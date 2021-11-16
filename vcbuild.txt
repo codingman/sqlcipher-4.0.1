@@ -1,0 +1,8 @@
+mkdir bld
+cd bld
+nmake /f ..\sqlite\Makefile.msc TOP=..\sqlite
+
+nmake /f ..\sqlite\Makefile.msc sqlite3.c TOP=..\sqlite           // 可选 
+nmake /f ..\sqlite\Makefile.msc sqlite3.dll TOP=..\sqlite         // 可选
+nmake /f ..\sqlite\Makefile.msc sqlite3.exe TOP=..\sqlite         // 可选
+nmake /f ..\sqlite\Makefile.msc test TOP=..\sqlite                // 可选
